@@ -3,28 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>
-        <img src="images/OIP.webp" alt="Logo" width="80">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/OIP.webp" alt="Logo" width="80">
+            </div>
+        
+        <div>
         <nav>
             <ul>
-                <li><a href ="#home">Home</a></li>
+                <li><a href ="#">Home</a></li>
                 <li><a href ="#about">About</a></li>
                 <li><a href ="#skills">Skills</a></li>
                 <li><a href ="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <form>
+ 
+        </nav>
+        </div>
+            <div class = "search-bar">
+                <form>
                 <input type="text" placeholder="Search">
                 <button type="submit">Search</button>
             </form>
-        </nav>
-        <hr>
+            </div>
+        </div>
     </header>
     <main>
         <section id="about">
+        <div class = "about-container">
+            <div class="about-text">
         <h1>About Me</h1>
         <p>
            I'm a Bachelor's student at
@@ -37,22 +49,33 @@
             using technologies like React,
             JavaScript and modern frontend tools.
         </p>
+        </div>
         <img src="images/image.png" alt="Profile Picture" width="200">
-        </section>
+        
+    </div>
+    </section>
         <section id = "skills">
-        <h1>Skills</h1>
-        <dl>
-        <dt> Programming Language</dt>
-        <dd> Java, C, Python, JavaScript</dd>
-
-        <dt> Web Frameworks</dt>
-        <dd> React, Angular, Node.js</dd>
-
-        <dt> Databases</dt>
-        <dd> MySql, MongoDb</dd>
-        </dl>
+        <div class="skills-container">
+            <h1 class="skills-heading">Skills</h1>
+            <div class="skills-grid">
+                <div class="skills-card">
+                    <dt> Programming Language</dt>
+                    <dd> Java, C, Python, JavaScript</dd>
+                </div>
+                <div class="skills-card">
+                    <dt> Web Frameworks</dt>
+                    <dd> React, Angular, Node.js</dd>
+                </div>
+                <div class="skills-card">
+                    <dt> Databases</dt>
+                    <dd> MySql, MongoDb</dd>
+                </div>
+            </div>
+        </div>
+        
         </section>
         <section id = "projects">
+        <div class="projects-container">
         <h1>Projects</h1>
         <article>
             <h2> Project 1: Portfolio Website</h2>
@@ -65,8 +88,10 @@
             <p> I have created a To-Do List App using HTML, CSS, and JavaScript to showcase my skills and projects. The website is responsive and includes sections for about me, skills, projects, and contact information.</p>
         <p><a href="" target="_blank">Click here to view it</a></p>
         </article>
+        </div>
         </section>
         <section id = "contact">
+        <div class="contact-container">
         <h1>Contact</h1>
         <form>
             <label for="name">Full Name:</label><br>
@@ -77,15 +102,16 @@
             <textarea id="message" name="message"></textarea><br>
             <button type="submit">Submit</button>
         </form>
+        </div>
         </section>
         <a href ="https://www.instagram.com/?hl=en" target="_blank"><img src="images/instagram-new-2016-logo-png_seeklogo-282177.png" width="50" alt="instagram"></a>
         <a href ="https://www.github.com/" target="_blank"><img src="images/images.png" width="50" alt="github"></a>
     </main>
     <hr>
+    </body>
 
     <footer>
         <p>&copy; 2026 My Portfolio. All rights reserved.</p>
     </footer>
     
-</body>
 </html>
